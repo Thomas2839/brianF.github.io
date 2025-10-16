@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Project 3 — Bouncy Ball</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    /* Small page-specific tweaks so the file works even if style.css isn't updated yet */
+    .project-header { text-align:center; margin-top:10px; }
+    .meta { text-align:center; color:#444; }
+    .container { width:90%; max-width:1100px; margin:20px auto; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+    .image-card { background:#fff; padding:8px; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center; }
+    .image-card img { width:100%; height:auto; border-radius:4px; }
+    .principles { display:flex; flex-wrap:wrap; gap:16px; }
+    .principle { flex:1 1 280px; background:#fff; padding:12px; border-radius:6px; }
+    .video-embed { width:100%; height:480px; border:0; border-radius:6px; }
+    @media (max-width:520px){ .video-embed{height:280px;} }
+  </style>
+</head>
+<body>
+
+  <header class="project-header">
+    <h1>Computer Science 417 — Computer Animation</h1>
+    <h2>Project 3 — Bouncy Ball</h2>
+    <p class="meta">Due: Thursday, 10/16/2025 &nbsp; | &nbsp; Fall 2025</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h3>Student</h3>
+      <p><strong>Name:</strong> Brian F</p>
+      <p><strong>Date Submitted:</strong> 10/16/2025</p>
+      <p><strong>Short description / storyboards:</strong></p>
+      <p>
+        The animation cuts between the ball bouncing along a series of pillars and a character 
+        (Mr. Pudding) standing before a bridge, stretching his limbs. As the ball approaches, he prepares himself
+        and in the blink of an eye slices it in half with a baseball bat, and the ball explodes.
+      </p>
+    </section>
+
+    <section>
+      <h3>Storyboards</h3>
+      <div class="gallery">
+        <div class="image-card">
+          <img src="board1.png" alt="Storyboard 1">
+          <div class="caption">Storyboard 1</div>
+        </div>
+        <div class="image-card">
+          <img src="board2.png" alt="Storyboard 2">
+          <div class="caption">Storyboard 2</div>
+        </div>
+        <div class="image-card">
+          <img src="board3.png" alt="Storyboard 3">
+          <div class="caption">Storyboard 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Animation Principles (three shown)</h3>
+      <div class="principles">
+        <article class="principle">
+          <h4>Slow In &amp; Out</h4>
+          <img src="timing.png" alt="Slow in and out" style="width:100%;height:auto;margin-bottom:8px;">
+          <p>Slow in and out is applied during the peaks of the jumps, where the ball ends one bounce and prepares for a new one.</p>
+        </article>
+
+        <article class="principle">
+          <h4>Squash &amp; Stretch</h4>
+          <img src="squash.png" alt="Squash and stretch" style="width:100%;height:auto;margin-bottom:8px;">
+          <p>Squash and stretch is primarily applied during each bounce, where the ball stretches upwards to signify the ball, squashes down for impact, then stretches up again for the quick ascent.</p>
+        </article>
+
+        <article class="principle">
+          <h4>Staging</h4>
+          <img src="staging.png" alt="Staging - Mr Pudding" style="width:100%;height:auto;margin-bottom:8px;">
+          <p>Staging is applied in a number of scenes, but notably in how Mr Pudding is repeatedly shown on the right side of the bridge, emphasizing an absence on the left where the ball is gradually approaching.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Final Animation</h3>
+      <div>
+        <!-- Example YouTube embed; replace ID with your video ID -->
+        <iframe class="video-embed" src="https://www.youtube.com/embed/VIDEO_ID" title="Final Animation" allowfullscreen></iframe>
+      </div>
+      <p>If you prefer, link to the video directly: <a href="#" id="videoLink">Your video link</a></p>
+    </section>
+
+    <section>
+      <h3>Notes / Extra explanation</h3>
+      <p>Use this area to explain shading choices, props used (stairs, extra balls), and any custom features if you completed the simplified alternative.</p>
+    </section>
+  </main>
+
+</body>
+</html>

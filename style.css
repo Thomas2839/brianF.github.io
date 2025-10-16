@@ -3,15 +3,45 @@
    "how to change link color." */
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  background-color: #f6f7fb;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height:1.5;
+  margin:0;
 }
 img {
-  width: 500px;
+  max-width: 100%;
   height: auto;
 }
 li img {
   display: block;      /* ensures it starts on a new line */
   margin-bottom: .5em;     /* space above the image */
 }
+
+/* Site-wide container used by project pages */
+.container { width:90%; max-width:1100px; margin:24px auto; }
+
+/* Simple header styles */
+header, .project-header { text-align:center; padding:18px 0; }
+
+/* Re-usable gallery grid */
+.gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+.image-card { background:#fff; padding:8px; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+.image-card img{ display:block; border-radius:4px; }
+.caption{ font-size:0.92rem; color:#444; margin-top:6px; text-align:center; }
+
+/* Basic link/button styling */
+a{ color:#0b66ff; }
+
+/* Responsive video embeds */
+.video-embed{ width:100%; height:480px; border:0; border-radius:6px; }
+@media (max-width:520px){ .video-embed{ height:260px; } }
+
+/* Form styles (if you add a submission form later) */
+.form-row{ display:flex; gap:12px; }
+@media (max-width:720px){ .form-row{ flex-direction:column; } }
+label{ display:block; font-weight:600; margin-bottom:6px; }
+input[type="text"], textarea, select{ width:100%; padding:8px 10px; border:1px solid #d5dbe8; border-radius:6px; }
+
+/* Small utility */
+.muted{ color:#666; font-size:0.95rem; }
