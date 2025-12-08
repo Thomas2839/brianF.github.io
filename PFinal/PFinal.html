@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Final Project — Short Animation</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Relative fallback for local file viewing -->
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header class="project-header">
+      <h1>Computer Animation — Final Project</h1>
+      <h2>Final Project — Short Animation</h2>
+      <p class="meta">Due: Friday, 12/12/2025 2:00 p.m. &nbsp; | &nbsp; Fall 2025</p>
+    </header>
+
+    <main class="container">
+      <section>
+        <h3>Project</h3>
+        <p><strong>Title:</strong> Mrs. Rabbit Uses her Imagination </p>
+        <p><strong>Name:</strong> Brian F.</p>
+        <p><strong>Date:</strong> 12/4/2025</p>
+        <p><strong>Project Description:</strong> Create a short animation, lasting at least 30 seconds, taking into account
+        the topics we covered this semester. Try to make the final product
+        entertaining and incorporate as many of the Disney 12 animation principles as possible.</p>
+      </section>
+
+      <section>
+        <h3>Storyboards</h3>
+        <div class="gallery">
+          <div class="image-card">
+              <img src="board0.png" alt="Board 1">
+              <div class="caption">Board 1</div>
+          </div>
+          <div class="image-card">
+              <img src="board1.png" alt="Board 2">
+              <div class="caption">Board 2</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Frames</h3>
+        <p>Three rendered frames from the animation.</p>
+        <div class="gallery">
+          <div class="image-card">
+            <img src="frame1.png" alt="Frame 1">
+            <div class="caption">Frame 1</div>
+          </div>
+          <div class="image-card">
+            <img src="frame2.png" alt="Frame 2">
+            <div class="caption">Frame 2</div>
+          </div>
+          <div class="image-card">
+            <img src="frame3.png" alt="Frame 3">
+            <div class="caption">Frame 3</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Final Animation</h3>
+        <p>          
+          An opening segment shows a rabbit girl in a dress drifting down from the sky, 
+          landing on a chair, and grabbing an open book. As she begins to narrate the characters come to life.</p>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EXk73fexGYs?si=lkpy5uyxJRJLHWQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>If you prefer a direct link, paste it here: <a href="#" target="_blank" rel="https://youtu.be/EXk73fexGYs?si=ohKv53S_Q_vpuhPP">(your video link)</a></p>
+      </section>
+
+      <section>
+        <h3>Credits</h3>
+        <p>Assets used from external sources.</p>
+        <ul>
+          <li><a href="https://polyhaven.com/a/pine_attic" target="_blank" rel="noopener noreferrer">Poly Haven — Pine Attic</a> — Creator: Sergej Majboroda</li>
+          <li><a href="https://polyhaven.com/a/fireplace" target="_blank" rel="noopener noreferrer">Poly Haven — Fireplace</a> — Creator: Greg Zaal</li>
+          <li><a href="https://sketchfab.com/3d-models/tenna-deltarune-230fc31e89d44450940db9aa8ae183d4" target="_blank" rel="noopener noreferrer">Sketchfab — Tenna (Deltarune)</a> — Creator: ThatAverageJoe</li>
+          <li><a href="https://sketchfab.com/3d-models/spamton-g-spamton-deltarune-ch2-b944272a7a0e4db982595106b49e2d4" target="_blank" rel="noopener noreferrer">Sketchfab — Spamton G. Spamton (Deltarune)</a> — Creator: Hamberry</li>
+        </ul>
+        <p class="credit-addendum"><strong>Addendum (12/2/2025):</strong> As of this date the Sketchfab listing for the Spamton model appears to have been removed; the reason is not known.</p>
+      </section>
+
+<!-- rework meeting page, join committee page, last few APIs -->
+
+      <section>
+        <h3>Notes / Explanation</h3>
+        <p>
+          I started with the animation of Satan and Mr. Cabal. Now you may have guessed that these are not models of the 
+          characters from the book I happen to be reading at the moment, because those don't exist. I instead chose to use models of characters they reminded me of, 
+          replacing Mr Cabal with a character known as Spamton and Satan one referred to as Tenna (like antenna, because he has a CRT for a head). 
+          From this point forward I'll be referring to them by those names for simplicity's sake.
+        </p>
+        <p>
+          I have three primary reasons behind my choice for the character models. 
+          The first of course has its roots in personal interest. I had already seen and was already curious about the models 
+          from familiarity with the characters, and determined them to be fitting. The game they come from is about 
+          objects coming to life, so I already knew how I could frame what I wanted to do in a way that hopefully wouldn't lose the audience. 
+          The second is my desire for practice with 
+          complex and simple rigs. I've used the rig generator used on Tenna before, so I knew the basics 
+          of the controls, but the topology and weight painting were poor and I wanted practice with 
+          properly made models, hoping I could study the topology afterwards and understand what made it work. I also wanted to practice 
+          animating simpler rigs, so I chose the Spamton model for that purpose. The third reason is that these characters
+          don't need traditional lip flaps, and thats going to be a requirement if I'm working with dialogue and I want to submit this on time.
+        </p>
+        <p>
+          I did have to make a few modifications to the rigs though. For Tenna, I had to redo the shading, as it was much too 
+          stylized, though I kept it for the face, as it seemed fitting for a glowing screen. Spamton also needed a minor shader adjustment 
+          to add transparency to his glasses for one shot, but the primary issue was in the rigging.
+          The initial issue being that the eye controls weren't hooked up properly so I had to learn what a "Damped Track" was, 
+          but I also found that there was no bone to control the position of the glasses; It seems they were meant to stay in place. 
+          While not necessarily a rigging issue, Tenna doesn't have any controls to change
+          the shape of his head, so I used a lattice modifier in the last shot, as I felt it wasn't expressive enough.
+        </p>
+        <p>
+          You may notice that I cut the shot where Tenna points his thumb at himself. My plans had to change when I realized
+          that the rigs arm poles weren't working properly so I couldn't position the elbows. I had already animated up to that point so I had to cut to the next
+          shot to avoid having to redo the animation or figure out retargeting. I ended up just importing a new version of the rig, this time giving a thorough test for
+          every function I planned on using.
+        </p>
+        <!-- <p>
+          While animating to an audio recording ensured I would hit the required length, after test screenings with my family
+          I figured a short prelude to ease the viewer in would be best, so I cut the last board and started working on
+          the opening shot where the narrator uses her dress to drift down and softly land on the couch, and began narrating the book I 
+          was reading from. 
+
+          I certainly appreciated finishing with one of my own models, while I felt the limitations of the poor weight painting I think I was able
+          to navigate it well.
+        </p> -->
+      </section>
+
+
+    </main>
+  </body>
+</html>
